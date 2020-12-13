@@ -9,18 +9,14 @@
 
 int MultiThreaded::mIDStart = 1;
 
-MultiThreaded::MultiThreaded(ImageViewer &iv)
-    : ThreadPoolTypes{ iv } {  }
+MultiThreaded::MultiThreaded()
+    : ThreadPoolTypes{  } {  }
 
 void MultiThreaded::thread_target(int id, int socket) {
-    /// do the job
-    ImageViewer::FinishedJob fd;
+    cv::Mat image = receive_image(socket);
+    cv::Mat gray = convert_to_grayscale(image);
 
-    fd.image = receive_image(socket);
-    fd.gray = convert_to_grayscale(fd.image);
-
-    // signal the viewer thread that we have the image ready
-    mViewer.signal(fd);
+    send_image(socket, gray);
 
     {
         // set our flag as finished so we can be removed from

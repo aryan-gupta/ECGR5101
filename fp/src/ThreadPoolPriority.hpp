@@ -13,5 +13,5 @@ class ThreadPoolPriority : public ThreadPool {
 public:
     /// Creates the connection manager using the ImageViewer provided
     /// and the number of threads. Also sets the priority of the thread
-    ThreadPoolPriority(ImageViewer &iv, size_t numThreads = 5);
+    ThreadPoolPriority(size_t numThreads = 5);
 };

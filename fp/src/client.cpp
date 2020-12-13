@@ -46,6 +46,9 @@ void client_send_data(std::string path) {
     cv::Mat img = cv::imread(path);
 
     send_image(sock, img);
+    cv::Mat gray = receive_image(sock);
+
+    show_images(img, gray);
 
     return; 
 }

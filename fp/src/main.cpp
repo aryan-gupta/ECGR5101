@@ -11,7 +11,6 @@
 #include "MultiThreaded.hpp"
 #include "ThreadPool.hpp"
 #include "ThreadPoolPriority.hpp"
-#include "ImageViewer.hpp"
 
 /// The test image to use during testing
 const static std::string TEST_IMAGE_PATH{ "test/Lenna.png" };
@@ -49,36 +48,28 @@ int main() {
             show_converted_grayscale_image(TEST_IMAGE_PATH);
             return 0;
         } else if (input == "2") {
-            ImageViewer iv{  };
-            iv.run();
-            SingleThread worker{ iv };
+            SingleThread worker{  };
             MainServer svr{ &worker };
             svr.run(false);
             wait_for_exit();
             svr.stop();
             return 0;
         } else if (input == "3") {
-            ImageViewer iv{  };
-            iv.run();
-            MultiThreaded worker{ iv };
+            MultiThreaded worker{  };
             MainServer svr{ &worker };
             svr.run(false);
             wait_for_exit();
             svr.stop();
             return 0;
         } else if (input == "4") {
-            ImageViewer iv{  };
-            iv.run();
-            ThreadPool worker{ iv };
+            ThreadPool worker{  };
             MainServer svr{ &worker };
             svr.run(false);
             wait_for_exit();
             svr.stop();
             return 0;
         } else if (input == "5") {
-            ImageViewer iv{  };
-            iv.run();
-            ThreadPoolPriority worker{ iv };
+            ThreadPoolPriority worker{  };
             MainServer svr{ &worker };
             svr.run(true);
             wait_for_exit();

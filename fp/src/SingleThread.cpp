@@ -4,20 +4,16 @@
 #include "image_converter.hpp"
 #include "network.hpp"
 
-SingleThread::SingleThread(ImageViewer &iv)
-    : ThreadPoolTypes{ iv } {  }
+SingleThread::SingleThread()
+    : ThreadPoolTypes{  } {  }
 
 void SingleThread::stop() {
     return;
 }
 
 void SingleThread::addJob(int job) {
-    ImageViewer::FinishedJob fd{  };
-    
-    fd.image = receive_image(job);
-    fd.gray = convert_to_grayscale(fd.image);
+    cv::Mat image = receive_image(job);
+    cv::Mat gray = convert_to_grayscale(image);
 
-    // signal to the viewer that we have compleated
-    // an image and its ready to show
-    mViewer.signal(fd);
+    send_image(job, gray);
 }

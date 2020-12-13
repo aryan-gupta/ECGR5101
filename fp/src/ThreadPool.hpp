@@ -8,7 +8,6 @@
 #include <queue>
 
 #include "ThreadPoolTypes.hpp"
-#include "ImageViewer.hpp"
 
 /// Creates a thread pool to manage each connection
 class ThreadPool : public ThreadPoolTypes {
@@ -32,7 +31,7 @@ protected:
 public:
     /// Constructs a thread pool using the supplied ImageViewer and
     /// number of threads
-    ThreadPool(ImageViewer &iv, size_t numThreads = 5);
+    ThreadPool(size_t numThreads = 5);
     ~ThreadPool() = default;
 
 

@@ -4,8 +4,8 @@
 #include "image_converter.hpp"
 #include "network.hpp"
 
-ThreadPool::ThreadPool(ImageViewer &iv, size_t numThreads)
-    : ThreadPoolTypes{ iv } {
+ThreadPool::ThreadPool(size_t numThreads)
+    : ThreadPoolTypes{  } {
     // create numThreads threads
     while (numThreads --> 0) {
         mThreads.emplace_back(&ThreadPool::thread_target, this);
@@ -48,12 +48,9 @@ void ThreadPool::thread_target() {
             }
         }
 
-        // do the job
-        ImageViewer::FinishedJob fd{  };
-        fd.image = receive_image(job);
-        fd.gray = convert_to_grayscale(fd.image);
-        
-        // signal the image viewer thread
-        mViewer.signal(fd);
+        cv::Mat image = receive_image(job);
+        cv::Mat gray = convert_to_grayscale(image);
+
+        send_image(job, gray);
     }
 }

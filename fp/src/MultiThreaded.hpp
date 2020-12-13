@@ -7,7 +7,6 @@
 #include <memory>
 
 #include "ThreadPoolTypes.hpp"
-#include "ImageViewer.hpp"
 
 /// A connection manager that starts a thread for every
 /// connection. The thread is started by the thread calling
@@ -33,7 +32,7 @@ class MultiThreaded : public ThreadPoolTypes {
 public:
     /// Constructs a Multithreaded connection manager using the
     /// supplied ImageViewer
-    MultiThreaded(ImageViewer &iv);
+    MultiThreaded();
 
     virtual void stop();
     virtual void addJob(int job);

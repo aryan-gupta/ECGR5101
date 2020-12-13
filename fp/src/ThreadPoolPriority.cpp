@@ -5,8 +5,8 @@
 #include <pthread.h>
 #include <sched.h>
 
-ThreadPoolPriority::ThreadPoolPriority(ImageViewer &iv, size_t numThreads)
-    : ThreadPool{ iv, numThreads }
+ThreadPoolPriority::ThreadPoolPriority(size_t numThreads)
+    : ThreadPool{ numThreads }
 {
     // Set the priorities
     pthread_attr_t tattr;
