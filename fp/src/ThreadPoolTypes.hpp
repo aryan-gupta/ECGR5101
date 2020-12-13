@@ -1,8 +1,5 @@
 #pragma once
 
-
-#include <opencv2/core/mat.hpp>
-
 #include "ImageViewer.hpp"
 
 /// The base class for all connection managers
@@ -12,9 +9,6 @@ protected:
     /// Only one thread can show the images or a deadlock
     /// will occur
     ImageViewer &mViewer;
-
-    /// Recives an image from the socket
-    cv::Mat receive_image(int socket);
 
 public:
     /// Creates the class using the ImageViewer provided

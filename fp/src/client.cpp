@@ -10,6 +10,7 @@
 #include "base64.h"
 
 #include "main.hpp"
+#include "network.hpp"
 
 void client_send_data(std::string path) {
     using namespace std::string_literals;
@@ -44,25 +45,7 @@ void client_send_data(std::string path) {
     // load the image
     cv::Mat img = cv::imread(path);
 
-    // convert the image to base64
-    std::vector<uchar> buf;
-    cv::imencode(".png", img, buf);
-    auto base64_png = reinterpret_cast<const unsigned char*>(buf.data());
-    std::string encoded_png = base64_encode(base64_png, buf.size());
-
-    // construct the message
-    std::string message = std::to_string(encoded_png.length()) + "\n" + encoded_png;
-
-    // send the message
-    send(sock, message.data(), message.length(), 0 );
-    
-    // debugging symbols
-    std::cout << "Image was sent" << std::endl;
-    std::cout << encoded_png.substr(0, 15) << std::endl;
-    std::cout << encoded_png.substr(encoded_png.size() - 15, encoded_png.size()) << std::endl;
-
-    std::cout << "Full Len: " << message.length() << std::endl;
-    std::cout << "IMG  Len: " << encoded_png.length() << std::endl;
+    send_image(sock, img);
 
     return; 
 }

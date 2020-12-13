@@ -2,6 +2,7 @@
 
 #include "main.hpp"
 #include "image_converter.hpp"
+#include "network.hpp"
 
 ThreadPool::ThreadPool(ImageViewer &iv, size_t numThreads)
     : ThreadPoolTypes{ iv } {

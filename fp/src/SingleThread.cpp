@@ -2,6 +2,7 @@
 
 #include "main.hpp"
 #include "image_converter.hpp"
+#include "network.hpp"
 
 SingleThread::SingleThread(ImageViewer &iv)
     : ThreadPoolTypes{ iv } {  }
