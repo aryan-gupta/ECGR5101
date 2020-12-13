@@ -13,10 +13,7 @@ MultiThreaded::MultiThreaded()
     : ThreadPoolTypes{  } {  }
 
 void MultiThreaded::thread_target(int id, int socket) {
-    cv::Mat image = receive_image(socket);
-    cv::Mat gray = convert_to_grayscale(image);
-
-    send_image(socket, gray);
+    ThreadPoolTypes::process_job(socket);
 
     {
         // set our flag as finished so we can be removed from

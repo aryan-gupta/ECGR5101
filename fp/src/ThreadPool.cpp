@@ -47,10 +47,7 @@ void ThreadPool::thread_target() {
                 mJobs.pop();
             }
         }
-
-        cv::Mat image = receive_image(job);
-        cv::Mat gray = convert_to_grayscale(image);
-
-        send_image(job, gray);
+       
+        ThreadPoolTypes::process_job(job);
     }
 }

@@ -3,6 +3,9 @@
 
 /// The base class for all connection managers
 class ThreadPoolTypes {
+protected:
+    static void process_job(int socket);
+
 public:
     /// Creates the class using the ImageViewer provided
     ThreadPoolTypes() = default;
