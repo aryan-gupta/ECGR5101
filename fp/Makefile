@@ -52,7 +52,7 @@ ILIBS = $(BOOST_INC) $(OPENCV_INC)
 LLIBS = $(BOOST_LNK) $(OPENCV_LNK) -lpthread
 
 # Compile/Link flags
-CFLAGS = $(DEBUG) $(ILIBS) -Wall -std=c++17 -c -fmax-errors=1
+CFLAGS = $(DEBUG) $(ILIBS) -Wall -std=c++17 -c # -fmax-errors=1
 LFLAGS = $(DEBUG) $(LLIBS) -Wall -lstdc++fs
 
 # Dependency flags
