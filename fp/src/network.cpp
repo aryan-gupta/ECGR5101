@@ -48,7 +48,7 @@ cv::Mat receive_image(int socket) {
 
     // parse the string length to an int
     size_t lengthToReceive = std::stoll(lengthToReceiveStr);
-    std::cout << "Image with len: " << lengthToReceive << " receiving" << std::endl;
+    std::cout << "NETWRK: Image with len: " << lengthToReceive << " receiving" << std::endl;
 
     // reserve more data so we dont do unnecessary reallocs
     master_buffer.reserve(lengthToReceive + 32);
@@ -68,7 +68,7 @@ cv::Mat receive_image(int socket) {
     std::vector<unsigned char> raw_img{ decoded_img.begin(), decoded_img.end() };
     cv::Mat image = cv::imdecode(raw_img, cv::IMREAD_COLOR);
 
-    std::cout << "Received image" << std::endl;
+    std::cout << "NETWRK: Received image" << std::endl;
 
     // return the decoded image
     return image;
@@ -89,10 +89,10 @@ void send_image(int socket, cv::Mat img) {
     send(socket, message.data(), message.length(), 0 );
     
     // debugging symbols
-    std::cout << "Image was sent" << std::endl;
-    std::cout << encoded_png.substr(0, 15) << std::endl;
-    std::cout << encoded_png.substr(encoded_png.size() - 15, encoded_png.size()) << std::endl;
+    std::cout << "NETWRK: Image was sent" << std::endl;
+    // std::cout << encoded_png.substr(0, 15) << std::endl;
+    // std::cout << encoded_png.substr(encoded_png.size() - 15, encoded_png.size()) << std::endl;
 
-    std::cout << "Full Len: " << message.length() << std::endl;
-    std::cout << "IMG  Len: " << encoded_png.length() << std::endl;
+    // std::cout << "Full Len: " << message.length() << std::endl;
+    std::cout << "NETWRK: Image Len: " << encoded_png.length() << std::endl;
 }

@@ -26,7 +26,7 @@ protected:
     std::atomic_flag mStop;
 
     // The thread target function. This is what each thread runs
-    void thread_target();
+    void thread_target(int id);
 
 public:
     /// Constructs a thread pool using the supplied ImageViewer and

@@ -37,6 +37,7 @@ void MainServer::run(bool priority) {
         ret = pthread_attr_setschedparam(&tattr, &param);
 
         pthread_setschedparam(mThread.native_handle(), policy, &param);
+        std::cout << "MainServer: Priority changed" << std::endl;   
     }
 }
 
@@ -46,7 +47,7 @@ void MainServer::stop() {
 }
 
 void MainServer::thread_target() const {
-    std::cout << "Server Started" << std::endl;
+    std::cout << "MainServer: Main server started" << std::endl;
 
     bool quit = false;
     int server_fd, new_socket; 
@@ -98,6 +99,8 @@ void MainServer::thread_target() const {
         exit(EXIT_FAILURE); 
     } 
 
+    std::cout << "MainServer: Socket server setup. Waiting for connections" << std::endl;
+
     do {
         // if we get a new connection request
         new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen);
@@ -107,7 +110,7 @@ void MainServer::thread_target() const {
             exit(EXIT_FAILURE); 
         }
 
-        std::cout << "New connection received" << std::endl;
+        std::cout << "MainServer: New connection received" << std::endl;
         
         // This is not needed, but I need to get non-blocking accept so
         // we can exit the server gracefully
@@ -115,7 +118,7 @@ void MainServer::thread_target() const {
             // add the socket to the job list so the worker threads
             // can work on them
             mPool->addJob(new_socket);
-            std::cout << "Job added" << std::endl;
+            std::cout << "MainServer: Job added" << std::endl;
         }
 
         // reload quit to test if we need to exit the server
