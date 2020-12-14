@@ -1,0 +1,10 @@
+
+
+If the machine never had a deadlock, the machine would complete 5000 jobs and would net the company $2 * $5'000 = $10'000 
+
+Because of the deadlock, 20 jobs have to be rerun which is about $60 (20 jobs * 1.5 lost during failure (they are half done) * 2 lost during rerun). This cost is negligible. The real cost is the salary of the employee. Which at minimum wage (7.25) is costing the company $1'160 per month, assuming 40-hour work week and 4 weeks a month. 
+
+
+If the employee is fired and the dead lock is mitigated using a algorithm, All the jobs still get completed, but without the $60 + $1'160 cost of the salary and the job restart cost.
+
+Yes, the company should fire the employee and setup a deadlock algorithm
