@@ -1,0 +1,5 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+busybox.net	0	0	1603848998	63072000
+buildroot.org	0	0	1603848343	63072000

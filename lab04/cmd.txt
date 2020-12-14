@@ -1,0 +1,1 @@
+insmod ./hello_world_module_proc.ko num=5 devname=Aryan

@@ -1,0 +1,1 @@
+qemu-system-arm -M vexpress-a15 -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"

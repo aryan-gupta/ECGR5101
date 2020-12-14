@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ubuntu:
+    image: ubuntu:latest
+    volumes:
+      - ./root:/root
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: /bin/bash
