@@ -1,0 +1,1593 @@
+: 1600480161:0;cd /home/aryan/Projects/ECGR5101/ass01
+: 1600480163:0;rm q3.c 
+: 1600480165:0;touch q3.c
+: 1600480657:0;clear
+: 1600480673:0;ls
+: 1600480674:0;clear
+: 1600480696:0;gcc q3.c -S -save-temps -m32 -march=i386
+: 1600480704:0;clear
+: 1600480704:0;gcc q3.c -S -save-temps -m32 -march=i386
+: 1600480712:0;clear
+: 1600480712:0;gcc q3.c -S -save-temps -m32 -march=i386
+: 1600480772:0;gcc q3.c -S -save-temps -m32 -march=i386 -O0
+: 1600480790:0;rm q3.{i,s}
+: 1600480792:0;gcc q3.c -S -save-temps -m32 -march=i386 -O0
+: 1600482129:0;mv Projects/ECGR5101/ass01/{imagetopdf,Assignment1.Gupta.Aryan).pdf
+: 1600482138:0;mv Projects/ECGR5101/ass01/{imagetopdf,Assignment1.Gupta.Aryan}.pdf
+: 1600482164:0;mv Projects/ECGR5101/ass01/Assignment1.Gupta.Aryan.pdf
+: 1600482172:0;gio Projects/ECGR5101/ass01/Assignment1.Gupta.Aryan.pdf
+: 1600482191:0;xdg-open Projects/ECGR5101/ass01/Assignment1.Gupta.Aryan.pdf
+: 1602630229:0;cd /home/aryan/Projects/ECGR5101
+: 1602630244:0;cd lab01
+: 1602630246:0;clear
+: 1602630246:0;ls
+: 1602630300:0;arm-none-eabi-as -mcpu=arm926ej-s -g startup.s -o startup.o
+: 1602630331:0;sudo pacman -Syu arm-none-eabi-(gcc,gdb)
+: 1602630339:0;sudo pacman -Syu arm-none-eabi-{gcc,gdb}
+: 1602630348:0;sudo pacman -Sy arm-none-eabi-{gcc,gdb}
+: 1602630375:0;clear
+: 1602630376:0;sudo pacman -Sy arm-none-eabi-{gcc,gdb}
+: 1602630381:0;clear
+: 1602630386:0;arm-none-eabi-as -mcpu=arm926ej-s -g startup.s -o startup.o
+: 1602630394:0;arm-none-eabi-gcc -c -mcpu=arm926ej-s -g HelloWorld.c -o HelloWorld.o
+: 1602630403:0;arm-none-eabi-ld -T HelloWorld.ld HelloWorld.o startup.o -o HelloWorld.elf
+: 1602630412:0;arm-none-eabi-objcopy -O binary HelloWorld.elf HelloWorld.bin
+: 1602630472:0;sudo pacman -Sy qemu-arch-extra
+: 1602630503:0;zsh
+: 1602630510:0;clear
+: 1602630533:0;qemu-arm -M versatilepb -m 128M -nographic -kernel ../Lab1/HelloWorld.bin
+: 1602630550:0;qemu-system-arm -M versatilepb -m 128M -nographic -kernel ../Lab1/HelloWorld.bin
+: 1602630616:0;qemu-system-arm -M versatilepb -m 128M -nographic -kernel HelloWorld.bin
+: 1602630669:0;qemu-system-arm -M versatilepb -m 128M -nographic -s -S -kernel HelloWorld.bin
+: 1602630690:0;clear
+: 1602630694:0;gdb
+: 1602630702:0;sudo pacman -Sy gdb
+: 1602630717:0;clear
+: 1602630720:0;gdb
+: 1602630754:0;cd /home/aryan/Projects/ECGR5101/lab01
+: 1602630755:0;clear
+: 1602630758:0;gdb
+: 1602630887:0;sudo pacman -S gdb-multiarch
+: 1602630906:0;clear
+: 1602630907:0;zsh
+: 1602630915:0;gdb-multiarch
+: 1602632548:0;qemu-system-arm -M versatilepb -m 128M -nographic -s -S -kernel HelloWorld.bin
+: 1602632551:0;gdb-multiarch
+: 1602633230:0;qemu-system-arm -M versatilepb -m 128M -nographic -s -S -kernel HelloWorld.bin
+: 1602633234:0;gdb-multiarch
+: 1602633840:0;cd ~ ; cd Projects/scripts_ && sudo ./enter_game_mode.sh ; popd
+: 1602700186:0;dh -h
+: 1602700190:0;du -h
+: 1602700196:0;df -h
+: 1602702297:0;cd Projects/ECGR5101/lab01
+: 1602702310:0;clear
+: 1602702315:0;arm-none-eabi-objcopy -O binary HelloWorld.elf HelloWorld.bin
+: 1602702328:0;qemu-system-arm -M versatilepb -m 128M -nographic -s -S -kernel HelloWorld.bin
+: 1602702331:0;gdb
+: 1602703826:0;cd Projects/ECGR5101/lab01
+: 1602703831:0;cat HelloWorld.ld
+: 1602889025:0;cd Projects/ECGR5101/ass03
+: 1602889034:0;cd Projects/ECGR5101/ass04/
+: 1602889037:0;mkdir 2
+: 1602889039:0;code .
+: 1602889086:0;xdg-open assignment4.pdf
+: 1602889421:0;cd 2
+: 1602889442:0;gcc -c main.c swap.c
+: 1602889449:0;ls
+: 1602889458:0;readelf  �symbols main.o swap.o
+: 1602889470:0;readelf  �-symbols main.o swap.o
+: 1602889481:0;readelf  �-symbols main.o
+: 1602889498:0;readelf  �s main.o
+: 1602889677:0;readelf main.o
+: 1602889705:0;readelf -a main.o
+: 1602889766:0;gcc -c -g main.c swap.c
+: 1602889769:0;readelf -a main.o
+: 1602889803:0;gcc -c main.c swap.c
+: 1602889811:0;readelf -a main.o swap.o
+: 1602889824:0;readelf -s main.o swap.o
+: 1602890555:0;readelf -x main.o
+: 1602890559:0;readelf -x main.o 
+: 1602890573:0;readelf -x .data main.o 
+: 1602890707:0;ld main.o swap.o -o out
+: 1602890726:0;readelf -x .data out
+: 1602890858:0;objdump out
+: 1602890863:0;objdump main.o
+: 1602890874:0;objdump -D main.o
+: 1602890882:0;objdump -D out
+: 1602891250:0;objdump -D main.o
+: 1602891252:0;objdump -D out
+: 1603226628:12;sudo pacman -S arm-none-eabi-newlib
+: 1603226667:0;cd /home/aryan/Projects/ECGR5101/lab02
+: 1603226668:0;clear
+: 1603226789:0;arm-none-eabi-gcc -mcpu=cortex-a8  -c -o mem_alloc.o mem_alloc.c
+: 1603226822:0;arm-none-eabi-as -mcpu=cortex-a8 -o startup.o startup.s
+: 1603226837:0;arm-none-eabi-gcc -mcpu=cortex-a8 -c -o syscalls.o syscalls.c
+: 1603226876:0;arm-none-eabi-gcc -nostdlib -T mem_alloc.ld mem_alloc.o startup.o syscalls.o -o mem_alloc
+: 1603227007:0;arm-none-eabi-gcc -nostdlib -T mem_alloc.ld mem_alloc.o startup.o syscalls.o /usr/arm-none-eabi/lib/libc.a  /usr/lib/gcc/arm-none-eabi/4.9.3/libgcc.a -o mem_alloc
+: 1603227024:5;sudo pacman -S arm-none-eabi-gcc
+: 1603227042:0;arm-none-eabi-gcc -nostdlib -T mem_alloc.ld mem_alloc.o startup.o syscalls.o /usr/arm-none-eabi/lib/libc.a  /usr/lib/gcc/arm-none-eabi/10.2.0/libgcc.a -o mem_alloc
+: 1603227093:0;clear
+: 1603227101:1;ftp://sourceware.org/pub/newlib/newlib-2.5.0.tar.gz\
+tar xzf newlib-2.5.0.tar.gz\
+cd newlib-2.5.0\
+./configure --target arm-none-eabi --disable-newlib-supplied-syscalls\
+make -j 8
+: 1603227112:0;wget ftp://sourceware.org/pub/newlib/newlib-2.5.0.tar.gz\
+tar xzf newlib-2.5.0.tar.gz\
+cd newlib-2.5.0\
+./configure --target arm-none-eabi --disable-newlib-supplied-syscalls\
+make -j 8
+: 1603227120:0;clear
+: 1603227125:0;pacman -Syu wget
+: 1603227132:5;sudo pacman -S wget
+: 1603227139:556;wget ftp://sourceware.org/pub/newlib/newlib-2.5.0.tar.gz\
+tar xzf newlib-2.5.0.tar.gz\
+cd newlib-2.5.0\
+./configure --target arm-none-eabi --disable-newlib-supplied-syscalls\
+make -j 8
+: 1603228100:0;cd ..
+: 1603228155:0;arm-none-eabi-gcc -nostdlib -T mem_alloc.ld mem_alloc.o startup.o syscalls.o ./newlib-2.5.0/arm-none-eabi/newlib/libc.a /usr/lib/gcc/arm-none-eabi/10.2.0/libgcc.a -o mem_alloc
+: 1603228173:0;arm-none-eabi-objcopy -O binary mem_alloc mem_alloc.bin
+: 1603228185:28;qemu-system-arm -M realview-pb-a8 -nographic -kernel mem_alloc.bin
+: 1603240532:0;clear
+: 1603240692:0;g++ mem_alloc.
+: 1603240695:0;g++ mem_alloc.c
+: 1603240718:0;clear
+: 1603240740:0;g++ mem_alloc.c
+: 1603240758:0;gcc mem_alloc.c
+: 1603240764:0;clear
+: 1603240809:0;gcc mem_alloc.c
+: 1603240813:0;clear
+: 1603240824:0;gcc mem_alloc.c -static
+: 1603240830:196;gdb a.out
+: 1603241041:5;sudo pacman -S strace
+: 1603241060:132;strace ./a.out
+: 1603241194:0;clear
+: 1603241196:17;strace ./a.out
+: 1603241217:3;strace ./a.out > test.txyt
+: 1603303513:0;cd Projects/ECGR5101/lab02
+: 1603303515:0;code .
+: 1603303563:0;nautilus .&
+: 1603303836:99;qemu-system-arm -M realview-pb-a8 -nographic -kernel mem_alloc.bin
+: 1603303961:0;arm-none-eabi-gcc -mcpu=cortex-a8 -c -o mem_alloc.o mem_alloc.c
+: 1603304178:0;make mem_alloc.bin
+: 1603304187:276;qemu-system-arm -M realview-pb-a8 -nographic -kernel mem_alloc.bin
+: 1603305837:0;make mem_alloc.bin
+: 1603305839:12;qemu-system-arm -M realview-pb-a8 -nographic -kernel mem_alloc.bin
+: 1603837426:0;cd /home/aryan/Projects/ECGR5101/lab03
+: 1603837438:0;cd busybox-1.32.0
+: 1603837490:3;make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- defconfig -j4
+: 1603837572:19;make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- menuconfig
+: 1603837605:1;make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- install -j8
+: 1603837611:1;make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- install
+: 1603837732:8;yay -S arm-linux-gnueabi-gcc
+: 1603837760:0;pacman-key --refresh-keys
+: 1603837764:0;sudopacman-key --refresh-keys
+: 1603837767:7;sudo pacman-key --refresh-keys
+: 1603837788:396;sudo pacman -Syu
+: 1603837430:0;cd /home/aryan/Projects/ECGR5101/lab03
+: 1603837434:0;cd linux-5.8.16
+: 1603837470:3;make ARCH=arm versatile_defconfig -j4
+: 1603838273:0;sudo reboot
+: 1603838761:0;cd /home/aryan/Projects/ECGR5101/lab03
+: 1603838452:0;cd /home/aryan/Projects/ECGR5101/lab03
+: 1603838454:0;cd busybox-1.32.0
+: 1603838503:54;yay -S arm-linux-gnueabi-gcc
+: 1603838564:3;sudo su
+: 1603838569:20;yay -S arm-linux-gnueabi-gcc
+: 1603838737:0;cd ..
+: 1603838740:1;git clone https://aur.archlinux.org/arm-linux-gnueabi-binutils.git
+: 1603838744:0;cd arm-linux-gnueabi-binutils
+: 1603838753:17;makepkg -si
+: 1603838784:0;sudo makepkg -si
+: 1603838945:0;cd ..
+: 1603838949:0;rm arm-linux-gnueabi-binutils
+: 1603838952:0;rm arm-linux-gnueabi-binutils -rf
+: 1603838954:0;cd busybox-1.32.0
+: 1603838998:4;make ARCH=arm CROSS_COMPILE=arm-none-eabi- defconfig
+: 1603839038:11;make ARCH=arm CROSS_COMPILE=arm-none-eabi- menuconfig
+: 1603839067:2;make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- install -j4
+: 1603839079:1;make ARCH=arm CROSS_COMPILE=arm-none-eabi- install -j4
+: 1603839188:1;gpg --recv-keys 13FCEF89DD9E3C4F
+: 1603839195:2;sudo gpg --recv-keys 13FCEF89DD9E3C4F
+: 1603839304:49;yay -S --mflags --skipinteg arm-linux-gnueabi-gcc
+: 1603839400:0;yay -S --mflags --skipinteg --skippgpcheck --nopgpfetch arm-linux-gnueabi-gcc
+: 1603839442:0;yay -S --mflags --skipinteg --skippgpkeys --nopgpfetch arm-linux-gnueabi-gcc
+: 1603839453:23;yay -S --mflags --skipinteg --nopgpfetch arm-linux-gnueabi-gcc
+: 1603839511:11;yay -S --mflags --skipinteg --nopgpfetch --mflags --skippgpkeys arm-linux-gnueabi-gcc
+: 1603839566:14;yay -S --mflags "--nocheck --skippgpcheck --noconfirm --skippgpkeys" arm-linux-gnueabi-gcc
+: 1603839618:13;yay -S --nopgpfetch --mflags "--nocheck --skippgpcheck --noconfirm --skippgpkeys" arm-linux-gnueabi-gcc
+: 1603839692:3;gpg --recv-keys 13FCEF89DD9E3C4F
+: 1603839761:0;cd ..
+: 1603839765:1;git clone https://aur.archlinux.org/arm-linux-gnueabi-binutils.git
+: 1603839768:0;cd arm-linux-gnueabi-binutils
+: 1603847500:0;docker ps
+: 1603847557:0;docker exec -it great_branch /bin/basg
+: 1603847559:0;docker exec -it great_branch /bin/bash
+: 1603850094:9;docker exec -it great_banach /bin/bash
+: 1603838447:0;cd /home/aryan/Projects/ECGR5101/lab03
+: 1603838449:0;cd linux-5.8.16
+: 1603838488:60;make ARCH=arm menuconfig 
+: 1603841631:0;cat ~/Projects/scripts/nix/addbootldr.sh
+: 1603848027:0;cd ..
+: 1603848028:0;ls
+: 1603848032:0;rm arm-linux-gnueabi-binutils
+: 1603848037:0;rm arm-linux-gnueabi-binutils -rf
+: 1603848038:0;clear
+: 1603848066:8;docker cp great_banach:/root/assignment .
+: 1603848076:0;ls
+: 1603848220:0;cd assignment
+: 1603848263:19;qemu-system-arm -M versatilepb -m 128M -kernel linux-5.8.16/arch/arm/boot/zImage -initrd busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1603850081:0;docker ps
+: 1603850107:0;cd ..
+: 1603850112:0;mkdir nfs-server
+: 1603850123:0;cd nfs-server
+: 1603850264:19;vim docker-compose.yml
+: 1603850289:0;code docker-compose.yml
+: 1603850322:0;pwd
+: 1603850340:0;mkdir autofs
+: 1603850379:0;cd ..
+: 1603850383:0;rm nfs-server
+: 1603850386:0;rm nfs-server -rf
+: 1603850408:8;sudo pacman -S nfs-utils
+: 1603850436:98;vim /etc/exports
+: 1603850536:38;sudo vim /etc/exports
+: 1603850759:7;sudo vim /etc/qemu-ifup
+: 1603850789:0;mv assignment assignment_old
+: 1603850794:8;docker cp great_banach:/root/assignment .
+: 1603850837:0;cp -r -d assignment/buildroot-2020.02.7/output/target/* outfs
+: 1603850870:0;cd outfs
+: 1603850870:0;ls
+: 1603850882:0;sudo mknod ./dev/console c 5 1
+: 1603850887:0;sudo mknod ./dev/zero c 1 5
+: 1603850892:0;sudo mknod ./dev/null c 1 3
+: 1603850896:0;sudo mknod ./dev/tty1 c 4 1
+: 1603850998:0;ls
+: 1603851000:0;ll
+: 1603851003:0;cd ..
+: 1603851010:0;ls assignment
+: 1603851336:0;ls
+: 1603851607:0;i[ a s
+: 1603852336:0;ip a s
+: 1603853774:0;cd /home/aryan/Projects/ECGR5101/lab03
+: 1603852495:1;sudo systemctl status nfs
+: 1603852501:51;sudo systemctl status nfs-server.service
+: 1603852568:0;sudo systemctl start nfs-server.service
+: 1603852573:6;sudo systemctl status nfs-server.service
+: 1603852581:0;sudo systemctl start nfs-server.service
+: 1603852582:6;sudo systemctl status nfs-server.service
+: 1603852626:0;exportfs -v
+: 1603852632:0;sudo exportfs -v
+: 1603852648:0;exportfs -arv
+: 1603852653:0;sudo exportfs -arv
+: 1603852722:0;showmount -e localhost
+: 1603850474:0;cd /home/aryan/Projects/ECGR5101/lab03
+: 1603850475:0;ls
+: 1603850481:0;cd assignment
+: 1603850483:0;cd ..
+: 1603850487:0;mkdir autofs
+: 1603850493:0;rm autofs
+: 1603850495:0;rm autofs -rf
+: 1603850512:0;mkdir outfs
+: 1603850515:0;cd outfs
+: 1603850516:0;ls
+: 1603850545:0;pwd
+: 1603850916:1;sudo systemctl restart nfs-server.service
+: 1603850982:97;vim run_nfs_linux.sh
+: 1603851085:0;chmod +x run_nfs_linux.sh
+: 1603851086:0;clear
+: 1603851090:0;./run_nfs_linux.sh
+: 1603851094:0;sudo ./run_nfs_linux.sh
+: 1603851126:0;ll /etc/qemu-ifup
+: 1603851137:0;sudo chmod +x /etc/qemu-ifup
+: 1603851139:0;sudo ./run_nfs_linux.sh
+: 1603851154:0;ls
+: 1603851159:0;mv run_nfs_linux.sh ..
+: 1603851160:0;clear
+: 1603851164:0;cd ..
+: 1603851165:0;ks
+: 1603851166:0;ls
+: 1603851170:0;sudo ./run_nfs_linux.sh
+: 1603851216:0;cat run_nfs_linux.sh
+: 1603851256:0;clear
+: 1603851260:0;cat run_nfs_linux.sh
+: 1603851308:0;qemu-system-arm -M vexpress-a15 -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603851313:0;sudo qemu-system-arm -M vexpress-a15 -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603851345:49;sudo qemu-system-arm -M vexpress-a15 -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb ./vexpress-v2p-ca15-tc1.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603851394:0;ss
+: 1603851406:0;clear
+: 1603851434:7;sudo qemu-system-arm -M vexpress-a15 -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603851455:16;sudo qemu-system-arm -M vexpress-a15 -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603851471:141;dd
+: 1603851616:0;clear
+: 1603851647:23;sudo qemu-system-arm -M vexpress-a15 -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.1.19:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603851670:0;ff
+: 1603851670:0;ls
+: 1603851816:0;sudo qemu-system-arm -M versatilepb -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.1.19:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603851834:0;sudo qemu-system-arm -M versatilepb -net tap -net nic -m 256MB -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.1.19:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603851842:140;sudo qemu-system-arm -M versatilepb -net tap -net nic -m 256M -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.1.19:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603852312:437;sudo qemu-system-arm -M versatilepb -net tap -net nic -m 256M -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603852763:385;sudo qemu-system-arm -M versatilepb -net tap -net nic -m 256M -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/aryan/Projects/ECGR5101/lab03/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603853181:60432;sudo qemu-system-arm -M versatilepb -net tap -net nic -m 256M -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/aryan/Projects/ECGR5101/lab03/outfs,nfsvers=3 ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1603913613:0;clear
+: 1603913620:0;sudo qemu-system-arm -M versatilepb -net tap -net nic -m 256M -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/aryan/Projects/ECGR5101/lab03/outfs,nfsvers=3 ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0" -nographic
+: 1603846421:0;docker run ubunt
+: 1603846435:4;sudo systemctl start docker.s
+: 1603846442:4;sudo systemctl start docker.service
+: 1603846449:0;clear
+: 1603846455:0;docker run ubunt
+: 1603846491:1;docker run ubuntu
+: 1603846544:0;docker ps
+: 1603846548:0;sudo docker ps
+: 1603846555:0;dicker ps --all
+: 1603846562:0;docker ps --all
+: 1603846590:72497;docker run  -ti ubuntu
+: 1603919092:0;docker ps
+: 1603854280:63;vim /etc/exports
+: 1603854421:65;vim /etc/qemu-ifup
+: 1603854594:0;cd Projects/ECGR5101/lab03/outfs
+: 1603854599:0;touch test.txt
+: 1603855959:0;cd ..
+: 1603855961:0;ls
+: 1603855973:9;docker cp great_banach:/root .
+: 1603918984:0;ls
+: 1603919009:4;rm assignment* root -rf
+: 1603919014:0;ls
+: 1603919037:0;rm busybox-1.32.0* linux-5.8.16*
+: 1603919040:4;rm busybox-1.32.0* linux-5.8.16* -rf
+: 1603919045:0;ls
+: 1603919049:0;clear
+: 1603919053:7;docker cp great_banach:/root .
+: 1603919078:0;ls
+: 1603919107:65;cd ~ ; cd Projects/scripts_ && sudo ./enter_game_mode.sh ; popd
+: 1603930501:0;cd Projects/ECGR5101/lab03/
+: 1605047166:0;cd Projects/ECGR5101/lab04
+: 1605047178:0;ln -s root ../lab03/root
+: 1605047188:0;ls
+: 1605047198:0;ln -s ./root ../lab03/root
+: 1605047214:0;man ln
+: 1605047230:0;ln -s ../lab03/root ./root
+: 1605047309:0;rm root/root
+: 1605047318:0;code docker-compose.yml
+: 1605047564:0;docker-compose up
+: 1605047591:0;systemctl start docker.service
+: 1605047615:0;docker-compose up
+: 1605047802:0;docker -s
+: 1605047805:0;docker ps
+: 1605047840:0;docker exec lab04_ubuntu_1 /bin/bash
+: 1605047878:0;docker exec -it lab04_ubuntu_1 /bin/bash
+: 1605048028:0;docker-compose up
+: 1605048112:0;docker exec -it lab04_ubuntu_1 /bin/bash
+: 1605048159:0;docker-compose up
+: 1605048165:0;docker exec -it lab04_ubuntu_1 /bin/bash
+: 1605048232:0;cd /home/aryan/Projects/ECGR5101/lab04
+: 1605048234:0;clear
+: 1605048235:0;make
+: 1605048991:0;qemu-system-arm -M versatilepb -m\
+128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd\
+root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh"\
+-dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605053992:0;cd /home/aryan/Projects/ECGR5101/lab04/root/assignment/busybox-1.32.0/_install
+: 1605054004:0;insmod ./hello_world_module_proc.ko num=5 devname=Aryan
+: 1605054008:0;sudo insmod ./hello_world_module_proc.ko num=5 devname=Aryan
+: 1605054285:0;cat /etc/fstab
+: 1605054679:0;cd /proc
+: 1605054688:0;sudo su
+: 1605054789:0;sudo cat /proc/mounts
+: 1605055789:0;exit
+: 1605055806:0;clear
+: 1605119777:0;cd Projects/ECGR5101/lab04/
+: 1605119785:0;cd root/assignment/kermod/
+: 1605119786:0;ls
+: 1605119794:0;ls *.c
+: 1605119838:0;ls
+: 1605119864:0;flameshot -c
+: 1605119868:0;flameshot -help
+: 1605119871:0;flameshot --help
+: 1605119883:0;flameshot gui
+: 1605119889:0;flameshot full
+: 1605119896:0;flameshot launcher
+: 1605122387:0;clear
+: 1605122400:0;sudo pacman -S telegram-desktop
+: 1605122412:0;sudo pacman -Sy telegram-desktop
+: 1605122565:0;clear
+: 1605122589:0;code Projects/ECGR5101/lab04/root/assignment/kermod/hello_world_module.c
+: 1605122652:0;code Projects/ECGR5101/lab04/Lab4.pdf
+: 1605122661:0;xdg-open Projects/ECGR5101/lab04/Lab4.pdf
+: 1605123206:0;cd Projects/ECGR5101/lab04/
+: 1605123216:0;code -n .
+: 1605123223:0;cd Projects/ECGR5101/lab04/
+: 1605123225:0;ls
+: 1605123230:0;docker-compose up
+: 1605123244:0;cd Projects/ECGR5101/lab04/
+: 1605123254:0;docker exec -it lab04_ubuntu_1 /bin/bash
+: 1605123295:0;qemu-system-arm -M versatilepb -m\
+128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd\
+root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh"\
+-dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605123318:0;qemu-system-arm -M vexpress-a15 -net tap -net nic -m 512 -kernel assignment/linux-5.8.16/arch/arm/boot/zImage -dtb assignment/linux-5.8.16/arch/arm/boot/dts/vexpress-v2p-ca15-tc1.dtb -append "console=tty1 root=/dev/nfs rw nfsroot=192.168.0.1:/home/developer/armsystem/outfs ip=192.168.0.2:192.168.0.1:192.168.0.1:255.255.255.0:qemu:eth0"
+: 1605123327:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd\
+root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605123331:0;clear
+: 1605123346:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd\
+ root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605123371:0;cd Projects/ECGR5101/lab04/
+: 1605123378:0;xdg-open Lab4.pdf
+: 1605390998:0;cd Projects/ECGR5101/ass07
+: 1605390999:0;ls
+: 1605391007:0;zathura aryan.gupta.assignment07.pdf
+: 1605391032:0;zathura ../ass02/assignment2.pdf
+: 1605658077:0;cd Projects/ECGR5101/lab04/
+: 1605658079:0;ls -la
+: 1605658089:0;cd ../lab04
+: 1605658104:0;ln -s ../lab03/root root
+: 1605658106:0;ls
+: 1605658116:0;cd ../lab05
+: 1605658122:0;ln -s ../lab03/root root
+: 1605658125:0;ls -la
+: 1605658128:0;clear
+: 1605658143:0;make
+: 1605658240:0;ln -s ../lab04/docker-compose.yml root
+: 1605658244:0;ls -la
+: 1605658252:0;ln -s ../lab04/docker-compose.yml .
+: 1605658253:0;ls
+: 1605658260:0;docker-compose up &
+: 1605658275:0;sudo systemctl start docker.service
+: 1605658279:0;docker-compose up &
+: 1605658289:0;clear
+: 1605658382:0;docker exec -it lab04_ubuntu_1 /bin/bash
+: 1605658387:0;docker ps
+: 1605658394:0;docker exec -it lab05_ubuntu_1 /bin/bash
+: 1605658709:0;cd Projects/ECGR5101/lab04/
+: 1605658713:0;cd ../lab05
+: 1605658714:0;ls
+: 1605658902:0;cd /home/aryan/Projects/ECGR5101/lab05/root/assignment/busybox-1.32.0/_install
+: 1605658912:0;code create.sh
+: 1605659118:0;chmod +x create.sh
+: 1605659121:0;./create.sh
+: 1605659216:0;cd Projects/ECGR5101/lab04/
+: 1605659233:0;cd ../lab05
+: 1605659244:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605659360:0;ls
+: 1605659369:0;code install.sh
+: 1605659605:0;chmod +x install.sh
+: 1605659623:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605661879:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb
+: 1605662114:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605662230:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh console=ttyS0 " -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605662242:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh console=ttyS0 " -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb
+: 1605662781:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605722923:0;code Projects/ECGR5101/lab02/syscalls.c
+: 1605724599:0;clear
+: 1605724624:0;sudo systemctl start docker.service
+: 1605724640:0;cd Projects/ECGR5101/lab05/
+: 1605724651:0;docker-compose up
+: 1605724660:0;docker-compose up &
+: 1605724664:0;clear
+: 1605724669:0;docker exec -it lab05_ubuntu_1 /bin/bash
+: 1605724718:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605724723:0;cd Projects/ECGR5101/lab05/
+: 1605724730:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605725663:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh console=ttyS0" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic 
+: 1605725707:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh console=ttyS0" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb
+: 1605725734:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb
+: 1605726562:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605726679:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial mon:stdio -append 'console=ttyS0'
+: 1605726871:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -nographic -monitor none -serial none \\
+-device virtio-serial-device -device virtconsole,chardev=char0 -chardev stdio,id=char0 \\
+-append "console=hvc0"
+: 1605726934:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -nographic -serial none
+: 1605726944:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -nographic
+: 1605726958:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -nographic -serial /dev/ttyS0
+: 1605726972:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -nographic -serial vc
+: 1605726983:0;cd Projects/ECGR5101/lab05/
+: 1605726984:0;ls
+: 1605727014:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial vc
+: 1605727020:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605727035:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial vc
+: 1605727049:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial /dev/partport0
+: 1605727062:0;sudo qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial /dev/ttyS0
+: 1605727130:0;screen /dev/ttyS0
+: 1605727137:0;sudo pacman -S screen
+: 1605727144:0;clear
+: 1605727145:0;sudo pacman -S screen
+: 1605727148:0;clear
+: 1605727150:0;screen /dev/ttyS0
+: 1605727218:0;sudo qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial chardev:char0
+: 1605727442:0;sudo qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb 
+: 1605727462:0;sudo qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial vc
+: 1605727540:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial stdio -serial pty
+: 1605727553:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial pty
+: 1605727736:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1605727834:0;clear
+: 1605729161:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic
+: 1606256160:0;cd ECGR5101/lab05/
+: 1606256160:0;ls
+: 1606256220:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial telnet:localhost:4321,server,nowait
+: 1606256235:0;telnet localhost 4321
+: 1606256273:0;cd root/assignment/uart_kermod
+: 1606256274:0;ls
+: 1606256278:0;vim memory.c
+: 1606256296:0;./compile.sh
+: 1606256300:0;cd ..
+: 1606256301:0;ls
+: 1606256302:0;cd ..
+: 1606256304:0;ls
+: 1606256311:0;docker-compose up &
+: 1606256317:0;cd ..
+: 1606256321:0;cler
+: 1606256322:0;clear
+: 1606256325:0;docker-compose up &
+: 1606256330:0;ls
+: 1606256338:0;sudo systemctl start docker.service
+: 1606256343:0;docker-compose up
+: 1606256351:0;docker exec -it lab05_ubuntu_1 /bin/bash
+: 1606256397:0;cd Projects/ECGR5101/lab05/root
+: 1606256400:0;cd ..
+: 1606256417:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial telnet:localhost:4321,server,nowait -serial telnet:localhost:4322,server,nowait
+: 1606256424:0;telnet localhost 4321
+: 1606256433:0;telnet localhost 4322
+: 1606256616:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial stdio -serial telnet:localhost:4322,server,nowait
+: 1606256626:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial vc -serial telnet:localhost:4322,server,nowait
+: 1606256639:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial pty -serial telnet:localhost:4322,server,nowait
+: 1606256650:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial /dev/partport0 -serial telnet:localhost:4322,server,nowait
+: 1606256658:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial /dev/ttyS0 -serial telnet:localhost:4322,server,nowait
+: 1606256665:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial null -serial telnet:localhost:4322,server,nowait
+: 1606256676:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial vc -serial telnet:localhost:4322,server,nowait
+: 1606256701:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial console -serial telnet:localhost:4322,server,nowait
+: 1606256747:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial stdio -serial telnet:localhost:4322,server,nowait
+: 1606256757:0;telnet localhost 4322
+: 1606256773:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial stdio -serial telnet:localhost:4322,server,nowait -nographic
+: 1606256779:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial stdio -serial telnet:localhost:4322,server,nowait -nographic 
+: 1606256853:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -serial stdio -serial telnet:localhost:4322,server,nowait -monitor none
+: 1606256922:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -serial telnet:localhost:4322,server,nowait
+: 1606256952:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -monitor stdio -serial telnet:localhost:4322,server,nowait
+: 1606256973:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -monitor stdio -display none -serial telnet:localhost:4322,server,nowait
+: 1606256987:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -nographic -display none -serial telnet:localhost:4322,server,nowait
+: 1606257017:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -display none -serial stdio -serial telnet:localhost:4322,server,nowait
+: 1606257078:0;telnet localhost 4322
+: 1606257152:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -display none -serial stdio -serial telnet:localhost:4321,server,nowait
+: 1606257157:0;telnet localhost 4321
+: 1606257884:0;sudo efibootmgr -n 1 && sudo reboot
+: 1606244069:0;cd Projects/ECGR5101/lab05/root
+: 1606244071:0;cd ..
+: 1606244072:0;ls
+: 1606244084:0;docker-compose up &
+: 1606244090:0;cd Projects/ECGR5101/lab05/root
+: 1606244092:0;cd ..
+: 1606244097:0;sudo systemctl start docker.service
+: 1606244107:0;docker-compose up &
+: 1606244123:0;docker exec -it lab05_ubuntu_1 /bin/bash
+: 1606262189:0;code .
+: 1606262200:0;clear
+: 1606262220:0;docker exec -it lab05_ubuntu_1 /bin/bash
+: 1606262594:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -display none -serial stdio -serial telnet:localhost:4321,server,nowait
+: 1606262658:0;telnet localhost 4321
+: 1606262767:0;exit
+: 1606264951:0;sudo systemctl start docker.service
+: 1606332404:0;cd Projects/ECGR5101/lab05
+: 1606332406:0;ls
+: 1606332411:0;docker-compose up &
+: 1606332417:0;sudo systemctl start docker.service
+: 1606332422:0;docker-compose up &
+: 1606332428:0;docker exec -it lab05_ubuntu_1 /bin/bash
+: 1606332449:0;cd Projects/ECGR5101/lab05/
+: 1606332455:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -display none -serial stdio -serial telnet:localhost:4321,server,nowait
+: 1606332467:0;clear
+: 1606332490:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -display none -serial stdio -serial telnet:localhost:4321,server,nowait
+: 1606332505:0;telnet localhost 4321
+: 1606332781:0;clear
+: 1606333517:0;qemu-system-arm -M versatilepb -m 128M -kernel root/assignment/linux-5.8.16/arch/arm/boot/zImage -initrd root/assignment/busybox-1.32.0/rootfs.img -append "root=/dev/ram rdinit=/bin/sh" -dtb root/assignment/linux-5.8.16/arch/arm/boot/dts/versatile-pb.dtb -display none -serial stdio -serial telnet:localhost:4321,server,nowait
+: 1606333576:0;telnet localhost 4321
+
+: 1606851756:0;cd Projects/ECGR5101
+: 1606851758:0;cd fp
+: 1606851759:0;ls
+: 1606852255:0;cd Projects/ECGR5101
+: 1606852258:0;cd fp
+: 1606852269:0;mv *.c *.h example
+: 1606855658:0;sudo pacman -S opencv
+: 1606856112:0;clear
+: 1606856117:0;g++ ImageConverter.hpp
+: 1606856145:0;g++ ImageConverter.cpp
+: 1606856358:0;g++ ImageConverter.cpp -I/usr/include/opencv4
+: 1606856370:0;g++ ImageConverter.cpp -I/usr/include/opencv4 -lopencv
+: 1606856412:0;g++ ImageConverter.cpp -I/usr/include/opencv4 -llibopencv
+: 1606856494:0;pkg-config --cflags --libs opencv
+: 1606856520:0;pkg-config --cflags --libs -lopencv_core
+: 1606856530:0;g++ ImageConverter.cpp -I/usr/include/opencv4 -lopencv_core
+: 1606856552:0;g++ ImageConverter.cpp -I/usr/include/opencv4     -lopencv_core \\
+    -lopencv_imgproc
+: 1606856605:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_contrib \\
+  -lopencv_legacy \\
+  -lopencv_flann
+: 1606856634:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann
+: 1606856801:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606856807:0;./a.out
+: 1606857022:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606857030:0;cd Projects/ECGR5101/fp
+: 1606857031:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606857527:0;./a.out
+: 1606857558:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606857561:0;./a.out
+: 1606857603:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606857618:0;./a.out
+: 1606857751:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606857754:0;./a.out
+: 1606857772:0;g++ ImageConverter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606859375:0;clear
+: 1606859388:0;g++ main.cpp
+: 1606859418:0;./a.out
+: 1606859449:0;g++ main.cpp
+: 1606859450:0;./a.out
+: 1606859510:0;g++ main.cpp
+: 1606859511:0;./a.out
+: 1606860007:0;g++ main.cpp
+: 1606860021:0;g++ main.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606860074:0;clear
+: 1606860075:0;g++ main.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606860115:0;clear
+: 1606860122:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606860128:0;./a.out
+: 1606860180:0;clear
+: 1606860181:0;./a.out
+: 1606860184:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606860190:0;./a.out
+: 1606860219:0;xev
+: 1606860226:0;xprop
+: 1606860310:0;./a.out
+: 1606860315:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606860322:0;./a.out
+: 1606860334:0;xprop
+: 1606860659:0;./a.out
+: 1606860714:0;clear
+: 1606860718:0;man bspc
+: 1606860813:0;bspc rule -a *:*:Lenna state=tiled
+: 1606860820:0;bspc rule -a "*:*:Lenna" state=tiled
+: 1606860823:0;man bspc
+: 1606860829:0;./a.out
+: 1606861020:0;clear
+: 1606861025:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606861032:0;./a.out
+: 1606861076:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606861081:0;./a.out
+: 1606861122:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606861127:0;./a.out
+: 1606861162:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606861168:0;./a.out
+: 1606861188:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606861192:0;./a.out
+: 1606861236:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606861241:0;./a.out
+: 1606861346:0;echo -e "\033[33;5mBlink Text\033[0m"
+: 1606861443:0;g++ main.cpp image_converter.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606861448:0;./a.out
+: 1606863797:0;clear
+: 1606863842:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606863932:0;clear
+: 1606863933:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606863946:0;clear
+: 1606863947:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606863973:0;clear
+: 1606863974:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864072:0;clear
+: 1606864073:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864107:0;clear
+: 1606864108:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864135:0;clear
+: 1606864135:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864162:0;clear
+: 1606864164:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864330:0;clear
+: 1606864331:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864374:0;clear
+: 1606864374:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864387:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864393:0;./a.out
+: 1606864441:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864446:0;./a.out
+: 1606864497:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864502:0;./a.out
+: 1606864747:0;clear
+: 1606864749:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864755:0;./a.out
+: 1606864773:0;netstat
+: 1606864784:0;clear
+: 1606864789:0;netstat | grep 4321
+: 1606864895:0;clear
+: 1606864899:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606864938:0;./a.out
+: 1606864961:0;python
+: 1606864971:0;telnet localhost 4321
+: 1606865149:0;clear
+: 1606865150:0;telnet localhost 4321
+: 1606865152:0;clear
+: 1606865155:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606865161:0;./a.out
+: 1606865170:0;telnet localhost 4321
+: 1606865295:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606865302:0;./a.out
+: 1606865309:0;telnet localhost 4321
+: 1606865374:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606865380:0;./a.out
+: 1606865385:0;telnet localhost 4321
+: 1606866542:0;clear
+: 1606866545:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606866704:0;clear
+: 1606866704:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606866710:0;./a.out
+: 1606866880:0;g++ main.cpp image_converter.cpp MainServer.cpp SingleThread.cpp -I/usr/include/opencv4   -lopencv_core -lpthread \\
+  -lopencv_imgproc \\
+  -lopencv_highgui \\
+  -lopencv_ml \\
+  -lopencv_video \\
+  -lopencv_features2d \\
+  -lopencv_calib3d \\
+  -lopencv_objdetect \\
+  -lopencv_flann \\
+  -lopencv_imgcodecs \\
+  -lopencv_videoio
+: 1606866885:0;./a.out
+: 1606866895:0;telnet localhost 4321
+: 1606867463:0;clear
+: 1606866959:0;clear
+: 1606867468:0;make
+: 1606867494:0;clear
+: 1606867495:0;make
+: 1606867679:0;clear
+: 1606867681:0;make
+: 1606867698:0;clear
+: 1606867700:0;make
+: 1606867727:0;clear
+: 1606867728:0;make
+: 1606867784:0;clear
+: 1606867785:0;make
+: 1606867939:0;clear
+: 1606867940:0;make
+: 1606868011:0;clear
+: 1606868012:0;make
+: 1606868051:0;/usr/bin/g++ bin/image_converter.o bin/main.o bin/MainServer.o bin/SingleThread.o -o bin/main.out -O3 -DNDEBUG -s  -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_flann -lopencv_imgcodecs -lopencv_videoio -lpthread -Wall -lstdc++fs
+: 1606868054:0;/usr/bin/g++ bin/image_converter.o bin/main.o bin/MainServer.o bin/SingleThread.o -o bin/main.out -O3 -DNDEBUG -s  -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_flann -lopencv_imgcodecs -lopencv_videoio -lpthread -Wall
+: 1606868109:0;clear
+: 1606868110:0;make
+: 1606868126:0;clear
+: 1606868127:0;make
+: 1606868148:0;clear
+: 1606868149:0;make
+: 1606868341:0;clear
+: 1606868342:0;make
+: 1606868350:0;make debug
+: 1606868366:0;make clean
+: 1606868369:0;make debug
+: 1606868383:0;clear
+: 1606871910:0;make
+: 1606871913:0;clear
+: 1606871920:0;make debug
+: 1606871937:0;clear
+: 1606871944:0;make debug | head 20
+: 1606871948:0;make debug | head -n 20
+: 1606871953:0;clear
+: 1606872011:0;make
+: 1606872055:0;clear
+: 1606872056:0;make
+: 1606872063:0;make clean debug
+: 1606872108:0;clear
+: 1606872109:0;make clean debug
+: 1606872114:0;make debug
+: 1606872174:0;make run
+: 1606872220:0;clear
+: 1606872223:0;make debug
+: 1606872274:0;clear
+: 1606872275:0;make debug
+: 1606872295:0;make run
+: 1606872308:0;clear
+: 1606872310:0;cd Projects/ECGR5101/fp
+: 1606872313:0;make run
+: 1606873228:0;clear
+: 1606873231:0;make run
+: 1606873239:0;make debug
+: 1606873262:0;clear
+: 1606873289:0;make debug
+: 1606873395:0;clear
+: 1606873395:0;make debug
+: 1606873464:0;clear
+: 1606873465:0;make debug
+: 1606873483:0;clear
+: 1606873484:0;make debug
+: 1606873499:0;clear
+: 1606873500:0;make debug
+: 1606873511:0;make run
+: 1606873519:0;clear
+: 1606873520:0;make run
+: 1606877851:0;clear
+: 1606877855:0;make debug run
+: 1606877870:0;clear
+: 1606877871:0;make debug run
+: 1606877925:0;clear
+: 1606877926:0;make debug run
+: 1606877987:0;clear
+: 1606877988:0;make debug run
+: 1606878028:0;clear
+: 1606878047:0;make debug run
+: 1606878196:0;clear
+: 1606878197:0;make debug run
+: 1606878515:0;clear
+: 1606878515:0;make debug run
+: 1606878749:0;clear
+: 1606878749:0;make debug run
+: 1606878870:0;clear
+: 1606878871:0;make debug run
+: 1606878874:0;clear
+: 1606878875:0;make debug run
+: 1606878981:0;a
+: 1606878983:0;make debug run
+: 1606879446:0;clear
+: 1606879446:0;make debug run
+: 1606879791:0;clear
+: 1606879792:0;make debug run
+: 1606879909:0;clear
+: 1606879910:0;make debug run
+: 1606879955:0;clear
+: 1606879956:0;make debug run
+: 1606880087:0;make debug run | tee test_svr.txt
+: 1606880107:0;make debug run | tee test_clnt.txt
+: 1606880172:0;cd Projects/ECGR5101/fp
+: 1606880173:0;ls
+: 1606880184:0;diff test_clnt.txt test_svr.txt
+: 1606880232:0;make debug run | tee test_svr.txt
+: 1606880241:0;make debug run | tee test_clnt.txt
+: 1606880356:0;clear
+: 1606880431:0;make debug run
+: 1606880768:0;clear
+: 1606880769:0;make debug run
+: 1606881009:0;clear
+: 1606881010:0;make debug run
+: 1606881281:0;cleae
+: 1606881282:0;clear
+: 1606881285:0;cleae
+: 1606881286:0;clear
+: 1606881288:0;make debug run
+: 1606881626:0;clear
+: 1606881627:0;make debug run
+: 1606882064:0;rm test_*
+: 1606883911:0;make debug run
+: 1606884102:0;clear
+: 1606884103:0;make debug run
+: 1606884598:0;clear
+: 1606884599:0;make debug run
+: 1606884647:0;clear
+: 1606884648:0;make debug run
+: 1606884817:0;clear
+: 1606884818:0;make debug run
+: 1606884911:0;clear
+: 1606884912:0;make debug run
+: 1606885119:0;clear
+: 1606885120:0;make debug run
+: 1606885299:0;clear
+: 1606885300:0;make debug run
+: 1606885349:0;clear
+: 1606885349:0;make debug run
+: 1606885476:0;clear
+: 1606885477:0;make debug run
+: 1606885551:0;bspc rule -a "*:*:Lenna" unmanaged
+: 1606885555:0;make debug run
+: 1606885911:0;gdb bin/main.out
+: 1606885919:0;make debug run
+: 1606886012:0;clear
+: 1606886013:0;make debug run
+: 1606886760:0;clear
+: 1606886760:0;make debug run
+: 1606886807:0;clear
+: 1606886808:0;make debug run
+: 1606886824:0;clear
+: 1606886824:0;make debug run
+: 1606916283:0;clear
+: 1606916286:0;make debug run
+: 1606916407:0;clear
+: 1606916407:0;make debug run
+: 1606916418:0;clear
+: 1606916419:0;make debug run
+: 1606916452:0;clear
+: 1606916453:0;make debug run
+: 1606916464:0;clear
+: 1606916465:0;make debug run
+: 1606916486:0;clear
+: 1606916487:0;make debug run
+: 1606916973:0;clear
+: 1606916992:0;make debug run
+: 1606917913:0;clear
+: 1606917922:0;diff Makefile_2 Makefile
+: 1606918000:0;clear
+: 1606918027:0;make debug run
+: 1606918150:0;rm Makefile_2
+: 1606918763:0;make debug run
+: 1606918846:0;clear
+: 1606918847:0;make debug run
+: 1606918917:0;clear
+: 1606918918:0;make debug run
+: 1606919239:0;clear
+: 1606919239:0;make debug run
+: 1606919857:0;a
+: 1606919860:0;make debug run
+: 1606920556:0;clear
+: 1606920557:0;make debug run
+: 1606921355:0;nmtui
+: 1606923365:0;make debug run
+: 1606923913:0;clear
+: 1606923914:0;make debug run
+: 1606923922:0;clear
+: 1606923923:0;make debug run
+: 1606924789:0;python
+: 1606924939:0;pip install flask imutils opencv
+: 1606924944:0;pip install flask imutils cv
+: 1606927107:0;clear
+: 1606927110:0;make debug run
+: 1606927206:0;clear
+: 1606927206:0;make debug run
+: 1606927223:0;clear
+: 1606927224:0;make debug run
+: 1606929311:0;make debug
+: 1606929330:0;cd ..
+: 1606929425:0;tar -czf fp
+: 1606929448:0;tar -czf final-project.tar.gz  fp
+: 1607551357:0;cd Projects/ECGR5101/fp
+: 1607551359:0;ls
+: 1607551372:0;cd Projects/ECGR5101
+: 1607551375:0;cd fp
+: 1607551378:0;clear
+: 1607551384:0;make run
+: 1607551388:0;make fun
+: 1607551398:0;bspc rule -a "*:*:Lenna" state=tiled
+: 1607551400:0;clear
+: 1607551404:0;make run
+: 1607552879:0;clear
+: 1607552884:0;make run
+: 1607553006:0;clear
+: 1607553007:0;make run
+: 1607554999:0;cd Projects/ECGR5101
+: 1607555016:0;zip fp -r
+: 1607895829:0;cd Projects/ECGR5101
+: 1607895832:0;git init .
+: 1607895850:0;gco -b fp
+: 1607895853:0;cd fp
+: 1607895853:0;ls
+: 1607895858:0;ga .
+: 1607895860:0;gss
+: 1607895868:0;git reset
+: 1607895884:0;clear
+: 1607895889:0;vim .gitignore
+: 1607895931:0;ga .
+: 1607895932:0;gss
+: 1607895953:0;gcmsg 'Add final project init code'
+: 1607896448:0;gss
+: 1607896460:0;gss .
+: 1607896601:0;cd Projects/ECGR5101/fp
+: 1607896602:0;clear
+: 1607896603:0;make
+: 1607896609:0;make clean debug
+: 1607896612:0;clear
+: 1607896701:0;make clean debug
+: 1607896730:0;clear
+: 1607896732:0;make debug
+: 1607896802:0;clear
+: 1607896805:0;make clean debug
+: 1607896822:0;xlear
+: 1607896824:0;clear
+: 1607896827:0;make fun
+: 1607896831:0;make run
+: 1607896876:0;bspc rule -a "*:*:Lenna" state=fullscreen
+: 1607896878:0;make run
+: 1607896963:0;clear
+: 1607896964:0;make run
+: 1607897135:0;clear
+: 1607897136:0;gss
+: 1607897139:0;gaa .
+: 1607897142:0;gss
+: 1607897154:0;gcmsg 'Move network functions into seperate file'
+: 1607897156:0;clear
+: 1607897158:0;gss
+: 1607897287:0;make debug run
+: 1607897290:0;clear
+: 1607897294:0;make debug run
+: 1607897335:0;clear
+: 1607897338:0;ga .
+: 1607897339:0;gss
+: 1607897344:0;gcn!
+: 1607897347:0;clear
+: 1607897927:0;gss .
+: 1607897959:0;gss
+: 1607897962:0;gss .
+: 1607897967:0;gco src/ImageViewer.*
+: 1607897972:0;gco src/ImageViewer.\*
+: 1607898129:0;make debug
+: 1607898602:0;clear
+: 1607898603:0;make debug
+: 1607898741:0;clear
+: 1607898742:0;make debug
+: 1607898746:0;make clean debug
+: 1607898883:0;clear
+: 1607898884:0;make clean debug
+: 1607898940:0;clear
+: 1607898941:0;make clean debug
+: 1607898990:0;clear
+: 1607898991:0;make clean debug
+: 1607898996:0;make debug
+: 1607899039:0;clear
+: 1607899040:0;make debug
+: 1607899055:0;make run
+: 1607899059:0;ckear
+: 1607899063:0;clear
+: 1607899065:0;make run
+: 1607899200:0;clear
+: 1607899202:0;gs .
+: 1607899207:0;ga .
+: 1607899208:0;ls
+: 1607899209:0;gss
+: 1607899221:0;git reset Makefile
+: 1607899252:0;gcmsg 'Move image viewing to client and remove ImageViewer class'
+: 1607899254:0;clear
+: 1607899258:0;gss .
+: 1607899820:0;gd
+: 1607899835:0;make debug run
+: 1607899947:0;make run
+: 1607899983:0;ga -p
+: 1607900005:0;gss .
+: 1607900010:0;ga src/ThreadPoolTypes.cpp
+: 1607900021:0;gcmsg 'Move processing of image into parent class'
+: 1607900903:0;clear
+: 1607900908:0;make debug run
+: 1607900975:0;clear
+: 1607900976:0;make debug run
+: 1607900985:0;clear
+: 1607900986:0;make debug run
+: 1607901011:0;cd Projects/ECGR5101/fp
+: 1607901021:0;clear
+: 1607901022:0;make debug run
+: 1607901262:0;clear
+: 1607901263:0;make debug run
+: 1607901939:0;gss .
+: 1607901950:0;ga src/*
+: 1607901971:0;gcmsg 'Add more logging for presentation'
+: 1607901974:0;gss
+: 1607901977:0;ga Makefile
+: 1607902002:0;gcmsg 'Remove g++ stop on single error from Makefile'
+: 1607902006:0;gss
+: 1607902026:0;clear
+: 1607902272:0;gl
+: 1607902275:0;git log
+: 1607973375:0;cd Projects/ECGR5101/fp
+: 1607973377:0;clear
+: 1607973380:0;cd Projects/ECGR5101/fp
+: 1607973382:0;clear
+: 1607973385:0;make debug run
+: 1607973485:0;gss
+: 1607973489:0;ga test/median.cpp
+: 1607973515:0;gcmsg 'Remove superfluous file'
+: 1607973517:0;clear
+: 1607973520:0;make debug run
+: 1607973552:0;bspc rule -a "*:*:Lenna" state=fullscreen
+: 1607973567:0;clear
+: 1607976013:0;make debug run
+: 1607976071:0;cd Projects/ECGR5101/fp
+: 1607976073:0;make debug run
+: 1607977670:0;cd Pr
+: 1607977672:0;cd Projects/ECGR5101/fp
+: 1607977676:0;gss
+: 1607977679:0;cd ..
+: 1607977679:0;ls
+: 1607978099:0;cd ass04
+: 1607978102:0;cd 2
+: 1607978111:0;vim .gitignore
+: 1607978178:0;ga ass*
+: 1607978183:0;cd ../../
+: 1607978187:0;ga ass*/*
+: 1607978192:0;gss
+: 1607978339:0;gcmsg 'Add all assignments'
+: 1607978359:0;git reset HEAD~
+: 1607978361:0;gss
+: 1607978391:0;git reset --soft HEAD~1
+: 1607978393:0;gss
+: 1607978411:0;gcmsg 'Remove superfluous file'
+: 1607978416:0;gss
+: 1607978419:0;gco master
+: 1607978432:0;gb
+: 1607978439:0;ga ass*/*
+: 1607978441:0;gss
+: 1607978447:0;gcmsg 'Add all assignments'
+: 1607978455:0;gss
+: 1607978488:0;gb -m master
+: 1607978492:0;gco master
+: 1607978500:0;ga textbook/
+: 1607978501:0;gss
+: 1607978508:0;cd ter
+: 1607978510:0;cd textbook
+: 1607978516:0;sha1sum *
+: 1607978595:0;clear
+: 1607978596:0;gss
+: 1607978610:0;gcmsg 'Add all textbook files'
+: 1607978641:0;gss
+: 1607978874:0;cd ../lab01
+: 1607978879:0;touch .gitignore
+: 1607978889:0;vim .gitignore
+: 1607978926:0;gss
+: 1607978929:0;ga .
+: 1607978930:0;gss
+: 1607978950:0;ga .
+: 1607978952:0;gss
+: 1607978963:0;gcmsg 'Add Lab 01'
+: 1607978986:0;cd ../lab02
+: 1607978987:0;gss
+: 1607978990:0;ls
+: 1607978999:0;vim .gitignore
+: 1607979145:0;ga .
+: 1607979147:0;gss
+: 1607979164:0;gcmsg 'Add lab02'
+: 1607979240:0;cd ../lab03
+: 1607979241:0;ls
+: 1607979251:0;cd root
+: 1607979251:0;ls
+: 1607979267:0;cd ..
+: 1607979268:0;ls
+: 1607979281:0;vim .gitignore
+: 1607979313:0;stat root/docker-compose.yml
+: 1607979339:0;stat root/root
+: 1607979360:0;cd root/assignment
+: 1607979361:0;ls
+: 1607979366:0;vim .gitignore
+: 1607979396:0;cd kermod
+: 1607979397:0;ls
+: 1607979416:0;vim .gitignore
+: 1607979472:0;cd ../busybox-1.32.0
+: 1607979478:0;cd ../uart_kermod
+: 1607979480:0;vim .gitignore
+: 1607979539:0;cd ../../../../
+: 1607979544:0;cd lab04
+: 1607979546:0;ls -la
+: 1607979558:0;cd ../lab05
+: 1607979559:0;ls
+: 1607979563:0;ls -la
+: 1607979573:0;cd ..
+: 1607979575:0;ls
+: 1607979578:0;gss
+: 1607979580:0;gaa
+: 1607979587:0;gss
+: 1607979598:0;git reset
+: 1607979608:0;cd lab03/root/assignment
+: 1607979609:0;ls
+: 1607979614:0;vim .gitignore
+: 1607979628:0;gaa
+: 1607979629:0;gss
+: 1607979706:0;cd kermod
+: 1607979716:0;vim .gitignore
+: 1607979733:0;vim ../uart_kermod/.gitignore
+: 1607979747:0;vim .gitignore
+: 1607979764:0;git reset
+: 1607979765:0;gaa
+: 1607979767:0;gss
+: 1607979817:0;gcmsg 
+: 1607979828:0;gcmsg 'Add labs 3 to 5'
+: 1607979874:0;git reset --soft HEAD~1
+: 1607979876:0;gss
+: 1607979881:0;git reset
+: 1607979882:0;gss
+: 1607979894:0;vim .gitignore
+: 1607979908:0;vim ../uart_kermod/.gitignore
+: 1607979917:0;gaa
+: 1607979917:0;gss
+: 1607979932:0;git reset
+: 1607979934:0;vim ../uart_kermod/.gitignore
+: 1607979949:0;vim .gitignore
+: 1607979962:0;gaa
+: 1607979964:0;gss
+: 1607979988:0;gcmsg 'Add labs 3 to 5'
+: 1607980019:0;cd ..
+: 1607980025:0;cd ../../../../
+: 1607980028:0;cd ECGR5101
+: 1607980044:0;touch zsh_history
+: 1607980052:0;code ~/.zsh_history
