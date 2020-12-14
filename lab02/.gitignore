@@ -1,0 +1,5 @@
+newlib*
+*.out
+*.o
+*.bin
+mem_alloc
